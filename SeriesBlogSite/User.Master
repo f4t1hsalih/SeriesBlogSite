@@ -43,8 +43,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="/web/images/logo.jpg" title="" /></a>
+                <a href="/Default.aspx">
+                    <img src="/web/images/logo.jpg" title="" />
+                </a>
             </div>
             <!---start-top-nav---->
             <div class="top-menu">
@@ -56,9 +57,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <span class="menu"></span>
                 <ul>
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="active"><a href="/Default.aspx">BLOGLAR</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
                     <div class="clearfix"></div>
                 </ul>
             </div>
@@ -79,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!---->
     <div class="footer">
         <div class="container">
-            <p>Copyrights © 2015 Blog All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+            <p>Copyrights © 2024 Dizi Blog Tüm Hakları Saklıdır | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
         </div>
     </div>
 </body>
