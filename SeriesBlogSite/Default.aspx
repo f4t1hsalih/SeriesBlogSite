@@ -13,7 +13,7 @@
                             <div class="content-grid-info">
                                 <img src="<%#Eval("blg_picture") %>" alt="" height="300" width="600" />
                                 <div class="post-info">
-                                    <h4><a href="single.html"><%#Eval("blg_title") %></a><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %> / 27 Comments</h4>
+                                    <h4><a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>"><%#Eval("blg_title") %></a><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %> / 27 Comments</h4>
                                     <p><%#Eval("blg_contents") %></p>
                                     <a href="single.html"><span></span>Devamını Oku</a>
                                 </div>
