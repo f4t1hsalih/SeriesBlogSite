@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="BlogDetail.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Entity\Model1.Context.tt">
@@ -110,6 +111,13 @@
     <Content Include="web\w3layouts-License.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BlogDetail.aspx.cs">
       <DependentUpon>BlogDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
