@@ -10,11 +10,21 @@ namespace SeriesBlogSite
         protected void Page_Load(object sender, EventArgs e)
         {
             SeriesBlogSiteEntities db = new SeriesBlogSiteEntities();
-            db.tbl_blog.ToList();
-            RepeaterBlog.DataSource = db.tbl_blog.ToList();
+
+            var blog = db.tbl_blog.ToList();
+            RepeaterBlog.DataSource = blog;
             RepeaterBlog.DataBind();
-            RepeaterLastBlogs.DataSource = db.tbl_blog.ToList();
+
+            RepeaterLastBlogs.DataSource = blog;
             RepeaterLastBlogs.DataBind();
+
+            var category = db.tbl_category.ToList();
+            RepeaterCategory.DataSource = category;
+            RepeaterCategory.DataBind();
+
+            var comment = db.tbl_comment.ToList();
+            RepeaterLastComments.DataSource = comment;
+            RepeaterLastComments.DataBind();
         }
     }
 }
