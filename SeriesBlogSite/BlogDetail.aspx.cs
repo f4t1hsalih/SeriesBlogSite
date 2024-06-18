@@ -12,8 +12,28 @@ namespace SeriesBlogSite
             {
                 int blogId = Convert.ToInt32(Request.QueryString["BlogID"]);
                 LoadBlogDetail(blogId);
+                LoadBlogComments(blogId);
             }
         }
+
+        private void LoadBlogComments(int blogId)
+        {
+            using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
+            {
+                var comments = db.tbl_comment
+                    .Where(b => b.cmt_blog == blogId)
+                    .Select(b => new
+                    {
+                        b.cmt_name,
+                        b.cmt_message,
+                    })
+                    .ToList();
+
+                RepeaterComment.DataSource = comments;
+                RepeaterComment.DataBind();
+            }
+        }
+
         private void LoadBlogDetail(int blogId)
         {
             using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())

@@ -11,11 +11,13 @@
                     <ItemTemplate>
                         <div class="content-grid">
                             <div class="content-grid-info">
-                                <img src="<%#Eval("blg_picture") %>" alt="" height="300" width="600" />
+                                <a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>">
+                                    <img src="<%#Eval("blg_picture") %>" alt="" height="300" width="600" />
+                                </a>
                                 <div class="post-info">
                                     <h4><a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>"><%#Eval("blg_title") %></a><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %> / 27 Comments</h4>
                                     <p><%#Eval("blg_contents") %></p>
-                                    <a href="single.html"><span></span>Devamını Oku</a>
+                                    <a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>"><span></span>Devamını Oku</a>
                                 </div>
                             </div>
                         </div>
