@@ -41,12 +41,11 @@
 
                 <div class="content-form">
                     <h3>Bir Yorum Bırak</h3>
-                    <form>
-                        <input type="text" placeholder="Name" required />
-                        <input type="text" placeholder="Email" required />
-                        <input type="text" placeholder="Phone" required />
-                        <textarea placeholder="Message"></textarea>
-                        <input type="submit" value="SEND" />
+                    <form runat="server" class="form-group">
+                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control"  placeholder="İsim" required=""></asp:TextBox>
+                        <asp:TextBox ID="txtEmail" TextMode="Email" runat="server" CssClass="form-control" placeholder="Mail"></asp:TextBox>
+                        <asp:TextBox ID="txtMessage" TextMode="MultiLine" runat="server" CssClass="form-control"  placeholder="Mesaj..."></asp:TextBox>
+                        <asp:Button ID="btnSend" runat="server" CssClass="btn btn-success" Text="GÖNDER" />
                     </form>
                 </div>
             </div>
