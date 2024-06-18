@@ -19,7 +19,6 @@
                     </asp:Repeater>
                 </div>
 
-
                 <ul class="comment-list">
                     <h3 style="margin-bottom: revert">Comments</h3>
                     <asp:Repeater ID="RepeaterComment" runat="server">
@@ -28,9 +27,9 @@
                                 <img src="/web/images/avatar.png" class="img-responsive" alt="" style="margin-bottom: 10px">
                                 <div class="desc">
                                     <p>
-                                        <p style="font-weight: bolder"><%#Eval("cmt_name") %></p>
+                                        <span style="font-weight: bolder"><%#Eval("cmt_name") %></span>
                                         :
-                                        <p><%#Eval("cmt_message") %></p>
+                                        <span><%#Eval("cmt_message") %></span>
                                     </p>
                                 </div>
                                 <div class="clearfix"></div>
@@ -42,14 +41,13 @@
                 <div class="content-form">
                     <h3>Bir Yorum Bırak</h3>
                     <form runat="server" class="form-group">
-                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control"  placeholder="İsim" required=""></asp:TextBox>
-                        <asp:TextBox ID="txtEmail" TextMode="Email" runat="server" CssClass="form-control" placeholder="Mail"></asp:TextBox>
-                        <asp:TextBox ID="txtMessage" TextMode="MultiLine" runat="server" CssClass="form-control"  placeholder="Mesaj..."></asp:TextBox>
-                        <asp:Button ID="btnSend" runat="server" CssClass="btn btn-success" Text="GÖNDER" />
+                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="İsim" required=""></asp:TextBox>
+                        <asp:TextBox ID="txtMail" TextMode="Email" runat="server" CssClass="form-control" placeholder="Mail"></asp:TextBox>
+                        <asp:TextBox ID="txtMessage" TextMode="MultiLine" runat="server" CssClass="form-control" placeholder="Mesaj..."></asp:TextBox>
+                        <asp:Button ID="btnSend" runat="server" CssClass="btn btn-success" Text="GÖNDER" OnClick="btnSend_Click" />
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 </asp:Content>

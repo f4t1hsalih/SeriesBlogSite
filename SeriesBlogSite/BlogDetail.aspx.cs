@@ -56,5 +56,23 @@ namespace SeriesBlogSite
                 }
             }
         }
+
+        protected void btnSend_Click(object sender, EventArgs e)
+        {
+            using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
+            {
+                tbl_comment comment = new tbl_comment
+                {
+                    cmt_name = txtName.Text,
+                    cmt_mail = txtMail.Text,
+                    cmt_message = txtMessage.Text,
+                    cmt_blog = int.Parse(Request.QueryString["BlogID"])
+                };
+
+                db.tbl_comment.Add(comment);
+                db.SaveChanges();
+            }
+            Response.Redirect(Request.RawUrl, false);
+        }
     }
 }
