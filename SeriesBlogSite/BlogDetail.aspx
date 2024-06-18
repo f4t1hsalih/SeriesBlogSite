@@ -7,10 +7,16 @@
         <div class="container">
             <div class="col-md-8 single-main">
                 <div class="single-grid">
-                    <img src="<%#Eval("blg_picture") %>" alt="" />
-                    <p>
-                        <%#Eval("blg_contents") %>
-                    </p>
+                    <asp:Repeater ID="RepeaterBlog" runat="server">
+                        <ItemTemplate>
+                            <img src="<%#Eval("blg_picture") %>" alt="" style="margin-bottom:10px" />
+                            <div class="lone-line">
+                                <h1><%#Eval("blg_title") %></h1>
+                                <p><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %> / 27 Comments</p>
+                                <p><%#Eval("blg_contents") %></p>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
                 <ul class="comment-list">
                     <h5 class="post-author_head">Written by <a href="#" title="Posts by admin" rel="author">admin</a></h5>
