@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SeriesBlogSite.Entity;
+using System;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace SeriesBlogSite
@@ -11,7 +9,12 @@ namespace SeriesBlogSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SeriesBlogSiteEntities db = new SeriesBlogSiteEntities();
+            db.tbl_blog.ToList();
+            RepeaterBlog.DataSource = db.tbl_blog.ToList();
+            RepeaterBlog.DataBind();
+            RepeaterLastBlogs.DataSource = db.tbl_blog.ToList();
+            RepeaterLastBlogs.DataBind();
         }
     }
 }

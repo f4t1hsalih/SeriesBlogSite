@@ -7,25 +7,30 @@
     <div class="container">
         <div class="content-grids">
             <div class="col-md-8 content-main">
-                <div class="content-grid">
-                    <div class="content-grid-info">
-                        <img src="/web/images/post1.jpg" alt="" />
-                        <div class="post-info">
-                            <h4><a href="single.html">Lorem ipsum dolor sit amet</a>  July 30, 2014 / 27 Comments</h4>
-                            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.</p>
-                            <a href="single.html"><span></span>Devamını Oku</a>
+                <asp:Repeater ID="RepeaterBlog" runat="server">
+                    <ItemTemplate>
+                        <div class="content-grid">
+                            <div class="content-grid-info">
+                                <img src="<%#Eval("blg_picture") %>"" alt="" height="300" width="600" />
+                                <div class="post-info">
+                                    <h4><a href="single.html"><%#Eval("blg_title") %></a>  <%#Eval("blg_date") %> / 27 Comments</h4>
+                                    <p><%#Eval("blg_contents") %></p>
+                                    <a href="single.html"><span></span>Devamını Oku</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
             <div class="col-md-4 content-right">
                 <div class="recent">
                     <h3>SON BLOGLAR</h3>
                     <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
+                        <asp:Repeater ID="RepeaterLastBlogs" runat="server">
+                             <ItemTemplate>
+                                 <li><a href="#"><%#Eval("blg_title") %></a></li>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </ul>
                 </div>
                 <div class="comments">
