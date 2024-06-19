@@ -13,7 +13,15 @@ namespace SeriesBlogSite.AdminPages
 
             using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
             {
-                Repeater1.DataSource = db.tbl_blog.ToList();
+                Repeater1.DataSource = (from x in db.tbl_blog
+                                        select new
+                                        {
+                                            x.blg_id,
+                                            x.blg_title,
+                                            x.blg_date,
+                                            x.tbl_type.typ_name,
+                                            x.tbl_category.ctg_name
+                                        }).ToList();
                 Repeater1.DataBind();
             }
         }

@@ -23,8 +23,8 @@
                         <td><%# Eval("blg_id") %></td>
                         <td><%# Eval("blg_title") %></td>
                         <td><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %></td>
-                        <td><%# Eval("blg_type") %></td>
-                        <td><%# Eval("blg_category") %></td>
+                        <td><%# Eval("typ_name") %></td>
+                        <td><%# Eval("ctg_name") %></td>
                         <td>
                             <asp:HyperLink ID="UpdateBlog" NavigateUrl='<%#"/AdminPages/AdminUpdateBlog.aspx?Update=" + Eval("blg_id") %>' CssClass="btn btn-warning" runat="server">Güncelle</asp:HyperLink>
                         </td>

@@ -47,7 +47,7 @@
                         <a class="nav-link" href="/AdminPages/AdminBlogs.aspx">Bloglar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#.aspx">Yorumlar</a>
+                        <a class="nav-link" href="/AdminPages/AdminComments.aspx">Yorumlar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#.aspx">Mesajlar</a>

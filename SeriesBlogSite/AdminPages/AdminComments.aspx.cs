@@ -11,7 +11,13 @@ namespace SeriesBlogSite.AdminPages
         {
             using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
             {
-                var comments = db.tbl_comment.ToList();
+                var comments = (from x in db.tbl_comment
+                                select new
+                                {
+                                    x.cmt_id,
+                                    x.cmt_name,
+                                    x.tbl_blog.blg_title
+                                }).ToList();
                 Repeater1.DataSource = comments;
                 Repeater1.DataBind();
             }

@@ -20,7 +20,7 @@
                     <tr>
                         <td><%# Eval("cmt_id") %></td>
                         <td><%# Eval("cmt_name") %></td>
-                        <td><%#Eval("cmt_blog") %></td>
+                        <td><%#Eval("blg_title") %></td>
                         <td>
                             <asp:HyperLink ID="UpdateComment" NavigateUrl='<%#"/AdminPages/AdminUpdateComment.aspx?Update=" + Eval("cmt_id") %>' CssClass="btn btn-warning" runat="server">Güncelle</asp:HyperLink>
                         </td>
@@ -32,7 +32,5 @@
             </asp:Repeater>
         </tbody>
     </table>
-
-    <a href="/AdminPages/AdminAddComment.aspx" class="btn btn-primary">Yeni Yorum</a>
 
 </asp:Content>
