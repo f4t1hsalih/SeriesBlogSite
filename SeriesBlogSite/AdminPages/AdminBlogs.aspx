@@ -22,7 +22,7 @@
                     <tr>
                         <td><%# Eval("blg_id") %></td>
                         <td><%# Eval("blg_title") %></td>
-                        <td><%# Eval("blg_date") %></td>
+                        <td><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %></td>
                         <td><%# Eval("blg_type") %></td>
                         <td><%# Eval("blg_category") %></td>
                         <td>

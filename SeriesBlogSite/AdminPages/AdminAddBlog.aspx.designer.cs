@@ -51,24 +51,6 @@ namespace SeriesBlogSite.AdminPages
         protected global::System.Web.UI.WebControls.TextBox txtBlgContent;
 
         /// <summary>
-        /// lblBlgDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBlgDate;
-
-        /// <summary>
-        /// txtBlgDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBlgDate;
-
-        /// <summary>
         /// lblBlgImage control.
         /// </summary>
         /// <remarks>
@@ -78,13 +60,13 @@ namespace SeriesBlogSite.AdminPages
         protected global::System.Web.UI.WebControls.Label lblBlgImage;
 
         /// <summary>
-        /// ImgBlgImage control.
+        /// txtBlgImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImgBlgImage;
+        protected global::System.Web.UI.WebControls.TextBox txtBlgImage;
 
         /// <summary>
         /// lblBlgType control.

@@ -11,15 +11,11 @@
         </div>
         <div>
             <asp:Label ID="lblBlgContent" runat="server" Text="Blog İçerik"></asp:Label>
-            <asp:TextBox ID="txtBlgContent" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
+            <asp:TextBox ID="txtBlgContent" TextMode="MultiLine" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
         </div>
         <div>
-            <asp:Label ID="lblBlgDate" runat="server" Text="Blog Tarih"></asp:Label>
-            <asp:TextBox ID="txtBlgDate" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
-        </div>
-        <div>
-            <asp:Label ID="lblBlgImage" runat="server" Text="Blog Resmi"></asp:Label>
-            <asp:Image ID="ImgBlgImage" runat="server" CssClass="form-control"/>
+            <asp:Label ID="lblBlgImage" runat="server" Text="Blog Resim Yolu"></asp:Label>
+            <asp:TextBox ID="txtBlgImage" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
         </div>
         <div>
             <asp:Label ID="lblBlgType" runat="server" Text="Blog Tür"></asp:Label>
@@ -31,7 +27,7 @@
         </div>
         <br />
         <div>
-            <asp:Button ID="btnSave" runat="server" CssClass="btn btn-success" Text="Kaydet" />
+            <asp:Button ID="btnSave" runat="server" CssClass="btn btn-success" Text="Kaydet" OnClick="btnSave_Click" />
         </div>
     </form>
 
