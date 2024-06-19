@@ -10,24 +10,24 @@
             <asp:TextBox ID="txtBlgTitle" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
         </div>
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Blog İçerik"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
+            <asp:Label ID="lblBlgContent" runat="server" Text="Blog İçerik"></asp:Label>
+            <asp:TextBox ID="txtBlgContent" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
         </div>
         <div>
-            <asp:Label ID="Label2" runat="server" Text="Blog Tarih"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
+            <asp:Label ID="lblBlgDate" runat="server" Text="Blog Tarih"></asp:Label>
+            <asp:TextBox ID="txtBlgDate" runat="server" CssClass="form-control" placeholder="***"></asp:TextBox>
         </div>
         <div>
-            <asp:Label ID="Label3" runat="server" Text="Blog Resmi"></asp:Label>
-            <asp:Image ID="Image1" runat="server" CssClass="form-control"/>
+            <asp:Label ID="lblBlgImage" runat="server" Text="Blog Resmi"></asp:Label>
+            <asp:Image ID="ImgBlgImage" runat="server" CssClass="form-control"/>
         </div>
         <div>
-            <asp:Label ID="Label4" runat="server" Text="Blog Tür"></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"></asp:DropDownList>
+            <asp:Label ID="lblBlgType" runat="server" Text="Blog Tür"></asp:Label>
+            <asp:DropDownList ID="ddlBlgType" runat="server" CssClass="form-control"></asp:DropDownList>
         </div>
         <div>
-            <asp:Label ID="Label5" runat="server" Text="Blog Kategori"></asp:Label>
-            <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control"></asp:DropDownList>
+            <asp:Label ID="lblBlgCategory" runat="server" Text="Blog Kategori"></asp:Label>
+            <asp:DropDownList ID="ddlBlgCategory" runat="server" CssClass="form-control"></asp:DropDownList>
         </div>
         <br />
         <div>
