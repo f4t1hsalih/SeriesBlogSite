@@ -78,6 +78,7 @@
     <Content Include="About.aspx" />
     <Content Include="AdminPages\AdminAddBlog.aspx" />
     <Content Include="AdminPages\AdminBlogs.aspx" />
+    <Content Include="AdminPages\AdminComments.aspx" />
     <Content Include="AdminPages\AdminDeleteBlog.aspx" />
     <Content Include="AdminPages\AdminUpdateBlog.aspx" />
     <Content Include="BlogDetail.aspx" />
@@ -102,6 +103,7 @@
     <Content Include="web\images\food.jpg" />
     <Content Include="web\images\icon3.png" />
     <Content Include="web\images\logo.jpg" />
+    <Content Include="web\images\logo2.png" />
     <Content Include="web\images\man.jpg" />
     <Content Include="web\images\more.png" />
     <Content Include="web\images\post1.jpg" />
@@ -143,6 +145,13 @@
     </Compile>
     <Compile Include="AdminPages\AdminBlogs.aspx.designer.cs">
       <DependentUpon>AdminBlogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminComments.aspx.cs">
+      <DependentUpon>AdminComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminComments.aspx.designer.cs">
+      <DependentUpon>AdminComments.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPages\AdminDeleteBlog.aspx.cs">
       <DependentUpon>AdminDeleteBlog.aspx</DependentUpon>

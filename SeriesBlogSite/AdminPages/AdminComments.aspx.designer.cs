@@ -7,29 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SeriesBlogSite
+namespace SeriesBlogSite.AdminPages
 {
 
 
-    public partial class User
+    public partial class AdminComments
     {
 
         /// <summary>
-        /// CPHHead control.
+        /// Repeater1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder CPHHead;
-
-        /// <summary>
-        /// CPHBody control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder CPHBody;
+        protected global::System.Web.UI.WebControls.Repeater Repeater1;
     }
 }
