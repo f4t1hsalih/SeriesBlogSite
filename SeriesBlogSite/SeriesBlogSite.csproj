@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AdminPages\AdminBlogs.aspx" />
     <Content Include="BlogDetail.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
@@ -118,6 +119,20 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminBlogs.aspx.cs">
+      <DependentUpon>AdminBlogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminBlogs.aspx.designer.cs">
+      <DependentUpon>AdminBlogs.aspx</DependentUpon>
     </Compile>
     <Compile Include="BlogDetail.aspx.cs">
       <DependentUpon>BlogDetail.aspx</DependentUpon>
@@ -190,6 +205,7 @@
     <Content Include="Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="User.Master" />
     <None Include="Web.Debug.config">

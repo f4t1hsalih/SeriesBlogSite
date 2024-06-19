@@ -11,7 +11,8 @@
                 <p>Blog sayfamızda bulunan film ve dizilere eklemek istedikleriniz için veya yorumlarda yaşadığınız herhangi bir problem olursa bizlere mesaj gönderebilirsiniz. Mesaj gönderme sırasında mutlaka mail adresinizi doğru bir şekilde yazın ki sizlere bu mail üzerinden dönüş yapabilelim.</p>
             </div>
 
-            <div class="contact-details">
+            <div class="contact-form">
+                <h4>İletişim Formu</h4>
                 <form runat="server">
                     <div>
                         <asp:TextBox ID="txtName" runat="server" CssClass="form-control" placeholder="Ad" required=""></asp:TextBox>
@@ -34,17 +35,11 @@
                 </form>
             </div>
 
-
-
-            <div class="contact-details">
-                <div class="col-md-6 contact-map">
-                    <h4>Biz Buradayız</h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.8885053628!2d28.847372731098304!3d41.00546324298783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1718737647817!5m2!1str!2str" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="clearfix"></div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.8885053628!2d28.847372731098304!3d41.00546324298783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1718737647817!5m2!1str!2str" width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-
+            <div class="clearfix"></div>
         </div>
     </div>
 

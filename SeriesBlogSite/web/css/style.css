@@ -56,7 +56,7 @@ ul, label {
             padding: 5px 6px;
             font-weight: 400;
             font-size: 1em;
-            color: #fff;
+            color: #4a5054;
             border: none;
             outline: none;
             font-family: 'Oswald', sans-serif;
@@ -351,43 +351,42 @@ ul, label {
     margin-bottom: 1em;
 }
 
-.contact-details form {
-    overflow: hidden; /* float'ların etkilerini temizle */
+.contact-info {
+    margin-bottom: 30px; /* Üstteki yazıyla form arasında boşluk */
 }
 
-    .contact-details form div {
-        margin-bottom: 1em; 
+.contact-form {
+    max-width: 600px;
+    border: 1px solid #ccc; /* Formun etrafında çizgi */
+    padding: 20px; /* İç boşluk */
+    border-radius: 5px; /* Köşeleri yuvarlama */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    margin-bottom: 30px; /* Form ile harita arasında boşluk */
+}
+
+    .contact-form h4 {
+        margin-top: 0; /* Başlık ile form üst kenarı arasındaki boşluğu kaldır */
+        margin-bottom: 20px; /* Başlık ile form elemanları arasındaki boşluk */
     }
 
-    .contact-details form input[type="text"],
-    .contact-details form input[type="email"],
-    .contact-details form input[type="tel"],
-    .contact-details form textarea {
-        width: 100%; 
-        padding: 10px;
-        border: 1px solid #E2E0ED;
-        font-size: 1em;
-        color: #4a5054;
-        background: #fff;
-        outline: none;
-        font-weight: 400;
-        font-family: 'Lato', sans-serif;
-        transition: 0.5s all ease;
-        box-sizing: border-box; 
-    }
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-    .contact-details form .btn-container {
-        text-align: right; 
-    }
+.btn-container {
+    text-align: right;
+}
 
-    .contact-details form .btn-success {
-        padding: 10px;
-        font-size: 1em;
-        font-weight: 300;
-        font-family: 'Lato', sans-serif;
-        transition: 0.5s all ease;
-    }
+.contact-map {
+    width: 100%; /* Haritanın tam genişlikte olması */
+}
 
+    .contact-map iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+    }
 
 .contact-map iframe {
     width: 100%;

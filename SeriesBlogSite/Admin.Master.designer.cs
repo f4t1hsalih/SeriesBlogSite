@@ -11,7 +11,7 @@ namespace SeriesBlogSite
 {
 
 
-    public partial class User
+    public partial class Admin
     {
 
         /// <summary>
