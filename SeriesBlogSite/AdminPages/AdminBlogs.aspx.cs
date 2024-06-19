@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SeriesBlogSite.Entity;
+using System;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SeriesBlogSite.AdminPages
 {
@@ -11,7 +9,13 @@ namespace SeriesBlogSite.AdminPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Title = "Bloglar";
 
+            using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
+            {
+                Repeater1.DataSource = db.tbl_blog.ToList();
+                Repeater1.DataBind();
+            }
         }
     }
 }
