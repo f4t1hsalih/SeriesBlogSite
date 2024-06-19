@@ -36,5 +36,21 @@ namespace SeriesBlogSite.AdminPages
                 }
             }
         }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(Request.QueryString["Update"]);
+            using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
+            {
+                var blog = db.tbl_blog.Find(id);
+                blog.blg_title = txtBlgTitle.Text;
+                blog.blg_contents = txtBlgContent.Text;
+                blog.blg_picture = txtBlgImage.Text;
+                blog.blg_type = byte.Parse(ddlBlgType.SelectedValue);
+                blog.blg_category = byte.Parse(ddlBlgCategory.SelectedValue);
+                db.SaveChanges();
+                Response.Redirect("/AdminPages/AdminBlogs.aspx");
+            }
+        }
     }
 }

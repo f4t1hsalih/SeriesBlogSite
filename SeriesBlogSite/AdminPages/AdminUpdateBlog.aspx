@@ -26,7 +26,7 @@
     </div>
     <br />
     <div>
-        <asp:Button ID="btnUpdate" runat="server" CssClass="btn btn-warning" Text="Güncelle" />
+        <asp:Button ID="btnUpdate" runat="server" CssClass="btn btn-warning" Text="Güncelle" OnClick="btnUpdate_Click" />
     </div>
 </form>
 
