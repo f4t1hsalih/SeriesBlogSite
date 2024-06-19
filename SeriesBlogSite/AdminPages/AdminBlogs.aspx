@@ -37,6 +37,6 @@
         </tbody>
     </table>
 
-    <a href="#.aspx" class="btn btn-primary">Yeni Blog</a>
+    <a href="/AdminPages/AdminAddBlog.aspx" class="btn btn-primary">Yeni Blog</a>
 
 </asp:Content>
