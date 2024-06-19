@@ -29,7 +29,7 @@
                         <asp:TextBox ID="txtMessage" runat="server" CssClass="form-control" TextMode="MultiLine" placeholder="Mesaj..." required=""></asp:TextBox>
                     </div>
                     <div class="btn-container">
-                        <asp:Button ID="btnSend" runat="server" CssClass="btn btn-success" Text="GÖNDER" />
+                        <asp:Button ID="btnSend" runat="server" CssClass="btn btn-success" Text="GÖNDER" OnClick="btnSend_Click" />
                     </div>
                 </form>
             </div>

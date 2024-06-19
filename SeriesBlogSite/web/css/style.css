@@ -274,13 +274,13 @@ ul, label {
         font-size: 2em;
     }
 
-.about-grid2, .about-grid, .who-iam {
+ .about-grid{
     margin-top: 2em;
 }
 
     .about-grid h3, .about-grid2 h3, .who-iam h3 {
-        color: #4a5054;
-        font-size: 1.3em;
+        color: #00aeff;
+        font-size: 2em;
         margin-bottom: 0.5em;
     }
 
@@ -590,18 +590,6 @@ ul.comment-list img {
         margin-bottom: 1em;
     }
 
-    .about-grid2, .about-grid, .who-iam {
-        margin-top: 1em;
-    }
-
-        .about-grid h3, .about-grid2 h3, .who-iam h3 {
-            font-size: 1.2em;
-        }
-
-        .about-grid p, .about-grid2 p, .who-iam p {
-            font-size: 0.9em;
-        }
-
     .man-pic img {
         width: 100%;
     }
@@ -706,20 +694,6 @@ ul.comment-list img {
 
     .about-content h2 {
         font-size: 1.5em;
-    }
-
-    .about-grid h3, .about-grid2 h3, .who-iam h3 {
-        font-size: 1.05em;
-    }
-
-    .about-grid p, .about-grid2 p {
-        font-size: 0.85em;
-        overflow: hidden;
-        height: 75px;
-    }
-
-    .about-grid2 li a {
-        font-size: 0.8em;
     }
 
     .who-iam p {
@@ -835,16 +809,8 @@ ul.comment-list img {
         padding: 1.5em 0;
     }
 
-    .about-grid h3, .about-grid2 h3, .who-iam h3 {
-        font-size: 1em;
-    }
-
     .about-grid p, .about-grid2 p {
         font-size: 0.8em;
-    }
-
-    .about-grid2 li {
-        margin: 0 0 7px 20px;
     }
 
     .who-iam p {
@@ -941,22 +907,10 @@ ul.comment-list img {
         padding: 1em 0;
     }
 
-    .about-grid h3, .about-grid2 h3, .who-iam h3 {
-        font-size: 0.9em;
-    }
-
-    .about-grid p, .about-grid2 p {
+    .about-grid p {
         font-size: 0.77em;
         margin-bottom: 0.5em;
         height: 70px;
-    }
-
-    .about-grid2 li a {
-        font-size: 0.75em;
-    }
-
-    .about-grid2 li:nth-child(2) {
-        display: none;
     }
 
     .man-info {

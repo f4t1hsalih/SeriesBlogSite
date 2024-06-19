@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <span class="menu"></span>
                 <ul>
-                    <li class="active"><a href="/Default.aspx">BLOGLAR</a></li>
+                    <li><a href="/Default.aspx">BLOGLAR</a></li>
                     <li><a href="/About.aspx">HAKKIMIZDA</a></li>
                     <li><a href="/Contact.aspx">İLETİŞİM</a></li>
                     <div class="clearfix"></div>
