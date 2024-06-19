@@ -26,10 +26,10 @@
                         <td><%# Eval("blg_type") %></td>
                         <td><%# Eval("blg_category") %></td>
                         <td>
-                            <a href="#.aspx" class="btn btn-warning">Güncelle</a>
+                            <asp:HyperLink ID="UpdateBlog" NavigateUrl='<%#"/AdminPages/AdminUpdateBlog.aspx?Update=" + Eval("blg_id") %>' CssClass="btn btn-warning" runat="server">Güncelle</asp:HyperLink>
                         </td>
                         <td>
-                            <a href="#.aspx" class="btn btn-danger">Sil</a>
+                            <asp:HyperLink ID="DeleteBlog" NavigateUrl='<%#"/AdminPages/AdminDeleteBlog.aspx?Delete=" + Eval("blg_id") %>' CssClass="btn btn-danger" runat="server">Sil</asp:HyperLink>
                         </td>
                     </tr>
                 </ItemTemplate>
