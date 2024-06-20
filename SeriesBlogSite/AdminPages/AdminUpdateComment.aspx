@@ -9,7 +9,7 @@
             <asp:Label ID="lblBlgTitle" runat="server" Text="Blog Başlık" ></asp:Label>
             <asp:TextBox ID="txtBlgTitle" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
         </div>
-        <div>vd
+        <div>
             <asp:Label ID="lblCmtName" runat="server" Text="Kullanıcı Adı"></asp:Label>
             <asp:TextBox ID="txtCmtName" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
