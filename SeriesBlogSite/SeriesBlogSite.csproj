@@ -82,6 +82,7 @@
     <Content Include="AdminPages\AdminDeleteBlog.aspx" />
     <Content Include="AdminPages\AdminDeleteComment.aspx" />
     <Content Include="AdminPages\AdminUpdateBlog.aspx" />
+    <Content Include="AdminPages\AdminUpdateComment.aspx" />
     <Content Include="BlogDetail.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
@@ -174,6 +175,13 @@
     </Compile>
     <Compile Include="AdminPages\AdminUpdateBlog.aspx.designer.cs">
       <DependentUpon>AdminUpdateBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminUpdateComment.aspx.cs">
+      <DependentUpon>AdminUpdateComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminUpdateComment.aspx.designer.cs">
+      <DependentUpon>AdminUpdateComment.aspx</DependentUpon>
     </Compile>
     <Compile Include="BlogDetail.aspx.cs">
       <DependentUpon>BlogDetail.aspx</DependentUpon>
