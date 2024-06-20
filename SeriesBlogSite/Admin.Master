@@ -53,7 +53,7 @@
                         <a class="nav-link" href="/AdminPages/AdminCommunications.aspx">Mesajlar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#.aspx">Hakkımızda</a>
+                        <a class="nav-link" href="/AdminPages/AdminAbout.aspx">Hakkımızda</a>
                     </li>
                 </ul>
             </div>

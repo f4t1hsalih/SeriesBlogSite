@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AdminPages\AdminAbout.aspx" />
     <Content Include="AdminPages\AdminAddBlog.aspx" />
     <Content Include="AdminPages\AdminBlogs.aspx" />
     <Content Include="AdminPages\AdminComments.aspx" />
@@ -83,6 +84,7 @@
     <Content Include="AdminPages\AdminDeleteBlog.aspx" />
     <Content Include="AdminPages\AdminDeleteComment.aspx" />
     <Content Include="AdminPages\AdminDeleteCommunication.aspx" />
+    <Content Include="AdminPages\AdminUpdateAbout.aspx" />
     <Content Include="AdminPages\AdminUpdateBlog.aspx" />
     <Content Include="AdminPages\AdminUpdateComment.aspx" />
     <Content Include="AdminPages\AdminViewCommunication.aspx" />
@@ -137,6 +139,13 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="AdminPages\AdminAbout.aspx.cs">
+      <DependentUpon>AdminAbout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminAbout.aspx.designer.cs">
+      <DependentUpon>AdminAbout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPages\AdminAddBlog.aspx.cs">
       <DependentUpon>AdminAddBlog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,6 +194,13 @@
     </Compile>
     <Compile Include="AdminPages\AdminDeleteCommunication.aspx.designer.cs">
       <DependentUpon>AdminDeleteCommunication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\AdminUpdateAbout.aspx.cs">
+      <DependentUpon>AdminUpdateAbout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\AdminUpdateAbout.aspx.designer.cs">
+      <DependentUpon>AdminUpdateAbout.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPages\AdminUpdateBlog.aspx.cs">
       <DependentUpon>AdminUpdateBlog.aspx</DependentUpon>
