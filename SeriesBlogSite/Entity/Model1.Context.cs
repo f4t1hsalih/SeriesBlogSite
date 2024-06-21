@@ -31,5 +31,6 @@ namespace SeriesBlogSite.Entity
         public virtual DbSet<tbl_comment> tbl_comment { get; set; }
         public virtual DbSet<tbl_communication> tbl_communication { get; set; }
         public virtual DbSet<tbl_type> tbl_type { get; set; }
+        public virtual DbSet<tbl_admin> tbl_admin { get; set; }
     }
 }

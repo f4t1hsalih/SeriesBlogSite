@@ -4,13 +4,21 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SeriesBlogSiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SeriesBlogSiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tbl_about">
           <Key>
             <PropertyRef Name="abt_id" />
           </Key>
           <Property Name="abt_id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="abt_description" Type="nvarchar" MaxLength="4000" />
+        </EntityType>
+        <EntityType Name="tbl_admin">
+          <Key>
+            <PropertyRef Name="adm_id" />
+          </Key>
+          <Property Name="adm_id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="adm_username" Type="varchar" MaxLength="20" />
+          <Property Name="adm_password" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="tbl_blog">
           <Key>
@@ -97,6 +105,7 @@
         </Association>
         <EntityContainer Name="SeriesBlogSiteModelStoreContainer">
           <EntitySet Name="tbl_about" EntityType="Self.tbl_about" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_admin" EntityType="Self.tbl_admin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_blog" EntityType="Self.tbl_blog" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_category" EntityType="Self.tbl_category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_comment" EntityType="Self.tbl_comment" Schema="dbo" store:Type="Tables" />
@@ -115,8 +124,7 @@
             <End Role="tbl_comment" EntitySet="tbl_comment" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SeriesBlogSiteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -235,7 +243,16 @@
             <End Role="tbl_blog" EntitySet="tbl_blog" />
             <End Role="tbl_comment" EntitySet="tbl_comment" />
           </AssociationSet>
+          <EntitySet Name="tbl_admin" EntityType="SeriesBlogSiteModel.tbl_admin" />
         </EntityContainer>
+        <EntityType Name="tbl_admin">
+          <Key>
+            <PropertyRef Name="adm_id" />
+          </Key>
+          <Property Name="adm_id" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="adm_username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="adm_password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -299,6 +316,15 @@
               <MappingFragment StoreEntitySet="tbl_type">
                 <ScalarProperty Name="typ_id" ColumnName="typ_id" />
                 <ScalarProperty Name="typ_name" ColumnName="typ_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_admin">
+            <EntityTypeMapping TypeName="SeriesBlogSiteModel.tbl_admin">
+              <MappingFragment StoreEntitySet="tbl_admin">
+                <ScalarProperty Name="adm_password" ColumnName="adm_password" />
+                <ScalarProperty Name="adm_username" ColumnName="adm_username" />
+                <ScalarProperty Name="adm_id" ColumnName="adm_id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

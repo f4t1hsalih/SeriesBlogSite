@@ -104,7 +104,6 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Login\css\style.css" />
-    <Content Include="Login\index.html" />
     <Content Include="Login\Login.aspx" />
     <Content Include="Web.config" />
     <Content Include="web\css\bootstrap.css" />
@@ -267,6 +266,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entity\tbl_about.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\tbl_admin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\tbl_blog.cs">

@@ -14,6 +14,7 @@
         <AssociationConnector Association="SeriesBlogSiteModel.FK_tbl_blog_tbl_category" ManuallyRouted="false" />
         <AssociationConnector Association="SeriesBlogSiteModel.FK_tbl_blog_tbl_type" ManuallyRouted="false" />
         <AssociationConnector Association="SeriesBlogSiteModel.FK_tbl_comment_tbl_blog" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SeriesBlogSiteModel.tbl_admin" Width="1.5" PointX="7.375" PointY="1.375" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
