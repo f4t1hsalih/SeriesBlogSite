@@ -16,16 +16,21 @@ namespace SeriesBlogSite.Login
             using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
             {
                 db.Configuration.ValidateOnSaveEnabled = false;
-                var user = db.tbl_admin.Where(x => x.adm_username == txtLoginUsername.Text && x.adm_password == txtLoginPassword.Text).FirstOrDefault();
+
+                string username = txtLoginUsername.Text.Trim();
+                string password = txtLoginPassword.Text.Trim();
+
+                var user = db.tbl_admin.FirstOrDefault(x => x.adm_username == username && x.adm_password == password);
+
                 if (user != null)
                 {
+                    Session.Add("username", user.adm_username);
                     Response.Redirect("/AdminPages/AdminBlogs.aspx");
                 }
                 else
                 {
                     Response.Write("<script>alert('Uyuşmayan Kullanıcı Adı veya Şifre')</script>");
                 }
-
             }
         }
     }

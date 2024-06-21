@@ -11,18 +11,37 @@ namespace SeriesBlogSite.AdminPages
         {
             Page.Title = "Bloglar";
 
-            using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
+            if (Session["username"] != null)
             {
-                Repeater1.DataSource = (from x in db.tbl_blog
-                                        select new
-                                        {
-                                            x.blg_id,
-                                            x.blg_title,
-                                            x.blg_date,
-                                            x.tbl_type.typ_name,
-                                            x.tbl_category.ctg_name
-                                        }).ToList();
-                Repeater1.DataBind();
+                Response.Write("Hoşgeldiniz, " + Session["username"].ToString());
+
+                try
+                {
+                    using (SeriesBlogSiteEntities db = new SeriesBlogSiteEntities())
+                    {
+                        var blogs = from x in db.tbl_blog
+                                    select new
+                                    {
+                                        x.blg_id,
+                                        x.blg_title,
+                                        x.blg_date,
+                                        x.tbl_type.typ_name,
+                                        x.tbl_category.ctg_name
+                                    };
+
+                        Repeater1.DataSource = blogs.ToList();
+                        Repeater1.DataBind();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Hata ayıklama için hata mesajı yazdırma
+                    Response.Write("Veritabanı hatası: " + ex.Message);
+                }
+            }
+            else
+            {
+                Response.Redirect("/Login/Login.aspx");
             }
         }
     }
