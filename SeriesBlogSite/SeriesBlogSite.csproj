@@ -88,6 +88,7 @@
     <Content Include="AdminPages\AdminUpdateBlog.aspx" />
     <Content Include="AdminPages\AdminUpdateComment.aspx" />
     <Content Include="AdminPages\AdminViewCommunication.aspx" />
+    <Content Include="AdminPages\Statistics.aspx" />
     <Content Include="BlogDetail.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
@@ -222,6 +223,13 @@
     </Compile>
     <Compile Include="AdminPages\AdminViewCommunication.aspx.designer.cs">
       <DependentUpon>AdminViewCommunication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
     </Compile>
     <Compile Include="BlogDetail.aspx.cs">
       <DependentUpon>BlogDetail.aspx</DependentUpon>
