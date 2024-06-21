@@ -58,6 +58,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/AdminPages/Statistics.aspx">İstatistikler</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Login/Login.aspx">Çıkış Yap</a>
+                    </li>
                 </ul>
             </div>
         </nav>

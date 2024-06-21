@@ -15,13 +15,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script>
-        addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }
+        addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar() { window.scrollTo(0, 1); }
     </script>
     <!-- Meta tags -->
     <!--stylesheets-->
     <link href="/Login/css/style.css" rel='stylesheet' type='text/css' media="all">
     <!--//style sheet end here-->
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-y: hidden; 
+        }
+        .mid-class {
+            min-height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .art-right-w3ls, .art-left-w3ls {
+            flex: 1; 
+        }
+    </style>
 </head>
 <body>
     <div class="mid-class">
@@ -32,20 +50,17 @@
                     <div class="form-left-to-w3l">
                         <asp:TextBox ID="txtLoginUsername" runat="server" placeholder="Kullanıcı Adı" required=""></asp:TextBox>
                     </div>
-                    <div class="form-left-to-w3l ">
+                    <div class="form-left-to-w3l">
                         <asp:TextBox ID="txtLoginPassword" TextMode="Password" runat="server" placeholder="Şifre" required=""></asp:TextBox>
-                        <div class="clear"></div>
                     </div>
                 </div>
-                <div class="clear"></div>
                 <div>
-                    <asp:Button ID="btnSignIn" CssClass="btn btn-info" runat="server" Text="Giriş Yap" />
+                    <asp:Button ID="btnSignIn" CssClass="btn btn-info" runat="server" Text="Giriş Yap" OnClick="btnSignIn_Click" />
                 </div>
             </form>
         </div>
         <div class="art-left-w3ls">
-            <h1 class="header-w3ls">Giriş Yapın ve Blog Yazmaya Başlayın
-            </h1>
+            <h1 class="header-w3ls">Giriş Yapın ve Blog Yazmaya Başlayın</h1>
         </div>
     </div>
 </body>
