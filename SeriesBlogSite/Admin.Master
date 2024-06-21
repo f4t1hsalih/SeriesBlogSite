@@ -55,6 +55,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/AdminPages/AdminAbout.aspx">Hakkımızda</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/AdminPages/Statistics.aspx">İstatistikler</a>
+                    </li>
                 </ul>
             </div>
         </nav>

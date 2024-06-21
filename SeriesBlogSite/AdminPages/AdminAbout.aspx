@@ -16,7 +16,7 @@
                 <tr>
                     <td><%# Eval("abt_description") %></td>
                     <td>
-                        <asp:HyperLink ID="UpdateBlog" NavigateUrl='<%#"/AdminPages/AdminUpdateAbout.aspx?Update=" + Eval("abt_id") %>' CssClass="btn btn-warning" runat="server">Güncelle</asp:HyperLink>
+                        <asp:HyperLink ID="UpdateAbout" NavigateUrl='<%#"/AdminPages/AdminUpdateAbout.aspx?Update=" + Eval("abt_id") %>' CssClass="btn btn-warning" runat="server">Güncelle</asp:HyperLink>
                     </td>
                 </tr>
             </ItemTemplate>

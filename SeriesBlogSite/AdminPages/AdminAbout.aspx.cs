@@ -17,6 +17,7 @@ namespace SeriesBlogSite.AdminPages
                 Repeater1.DataSource = (from x in db.tbl_about
                                         select new
                                         {
+                                            x.abt_id,
                                             x.abt_description
                                         }).ToList();
                 Repeater1.DataBind();

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SeriesBlogSite.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="CategoryDetail.aspx.cs" Inherits="SeriesBlogSite.CategoryDetail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHHead" runat="server">
 </asp:Content>
@@ -63,6 +63,7 @@
                                 <li><a href="/CategoryDetail.aspx?ID=<%#Eval("ctg_id") %>"><%#Eval("ctg_name") %></a></li>
                             </ItemTemplate>
                         </asp:Repeater>
+
                     </ul>
                 </div>
                 <div class="clearfix"></div>
