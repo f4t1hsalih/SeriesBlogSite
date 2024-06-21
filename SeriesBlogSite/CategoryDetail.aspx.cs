@@ -19,16 +19,20 @@ namespace SeriesBlogSite
                     RepeaterBlog.DataSource = blog;
                     RepeaterBlog.DataBind();
 
-                    RepeaterLastBlogs.DataSource = blog;
+                    RepeaterLastBlogs.DataSource = db.tbl_blog
+                                                     .OrderByDescending(b => b.blg_date)
+                                                     .Take(5)
+                                                     .ToList();
                     RepeaterLastBlogs.DataBind();
+
+                    var comment = db.tbl_comment.OrderByDescending(x => x.cmt_id).Take(5).ToList();
+                    RepeaterLastComments.DataSource = comment;
+                    RepeaterLastComments.DataBind();
 
                     var category = db.tbl_category.ToList();
                     RepeaterCategory.DataSource = category;
                     RepeaterCategory.DataBind();
 
-                    var comment = db.tbl_comment.ToList();
-                    RepeaterLastComments.DataSource = comment;
-                    RepeaterLastComments.DataBind();
                 }
             }
             catch (FormatException ex)

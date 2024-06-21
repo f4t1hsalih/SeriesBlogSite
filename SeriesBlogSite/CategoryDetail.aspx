@@ -40,21 +40,12 @@
                     <ul>
                         <asp:Repeater ID="RepeaterLastComments" runat="server">
                             <ItemTemplate>
-                                <li><a href="#"><%# Eval("cmt_name") %></a></li>
+                                <li><a href="#"><%# Eval("cmt_name") %> - <%# Eval("cmt_message") %></a></li>
                             </ItemTemplate>
                         </asp:Repeater>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
-                <div class="archives">
-                    <h3>ARŞİVLER</h3>
-                    <ul>
-                        <li><a href="#">Ocak 2024</a></li>
-                        <li><a href="#">Şubak 2024</a></li>
-                        <li><a href="#">Mart 2024</a></li>
-                        <li><a href="#">Nisan 2024</a></li>
-                    </ul>
-                </div>
                 <div class="categories">
                     <h3>KATEGORİLER</h3>
                     <ul>

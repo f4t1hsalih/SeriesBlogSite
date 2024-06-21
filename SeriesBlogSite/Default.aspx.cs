@@ -21,13 +21,14 @@ namespace SeriesBlogSite
                                                  .ToList();
                 RepeaterLastBlogs.DataBind();
 
+                var comment = db.tbl_comment.OrderByDescending(x=>x.cmt_id).Take(5).ToList();
+                RepeaterLastComments.DataSource = comment;
+                RepeaterLastComments.DataBind();
+
                 var category = db.tbl_category.ToList();
                 RepeaterCategory.DataSource = category;
                 RepeaterCategory.DataBind();
 
-                var comment = db.tbl_comment.Take(5).ToList();
-                RepeaterLastComments.DataSource = comment;
-                RepeaterLastComments.DataBind();
             }
         }
     }
