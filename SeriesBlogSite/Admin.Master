@@ -30,7 +30,7 @@
 
         .content {
             padding: 20px 150px 20px 150px;
-            margin-top: 70px; /* Navbar'ın altına içerik yerleştirmek için */
+            margin-top: 70px;
         }
     </style>
 </head>
