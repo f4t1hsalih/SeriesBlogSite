@@ -15,7 +15,7 @@
                                     <img src="<%#Eval("blg_picture") %>" alt="" height="300" width="600" />
                                 </a>
                                 <div class="post-info">
-                                    <h4><a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>"><%#Eval("blg_title") %></a><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %> / 27 Comments</h4>
+                                    <h4><a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>"><%#Eval("blg_title") %></a><%#((DateTime)Eval("blg_date")).ToString("dd.MM.yyyy") %></h4>
                                     <p><%#Eval("blg_contents") %></p>
                                     <a href="/BlogDetail.aspx?BlogID=<%#Eval("blg_id") %>"><span></span>Devamını Oku</a>
                                 </div>
